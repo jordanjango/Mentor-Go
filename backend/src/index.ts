@@ -3,7 +3,6 @@ import dbConnect from "./config/dbConnect";
 import dotenv from "dotenv";
 const app = express();
 const port = process.env.PORT || 3000;
-const dotenvConfig = dotenv.config({ path: "backend/.env" });
 //Connect MongoDb and create the clusters now.
 dbConnect();
 //Check the API health by using a GET API.
